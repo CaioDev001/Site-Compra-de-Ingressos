@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Lobster&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../Mídia/fundo-de-madeira-velho-grunge-texturizado-escuro_7182-1588.avif');
+    background-size: cover;
+    width: 100%;
+    background-position: 100%;
+    position: absolute;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 26px;
+    transition: .5s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+li:hover {
+    transform: scale(1.25);
+}
+
+#logo-1 {
+    width: 225px;
+    height: 100%;
+    object-fit: contain;
+}
+
+#banner {
+    background-image: url('https://www.liveforfilm.com/wp-content/uploads/2022/01/pinocchio-logo-guillermo-del-toro.jpg');
+    background-position: 50% 50%;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 90%;
+    height: 220px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    width: 80%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #594327;
+    color: #F2E0C9;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px; 
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #F2E0C9;
+    color: #594327;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/1429550/GregoryMann-2022a_r.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMjA5Mjk0NzU4MV5BMl5BanBnXkFtZTcwNzc1Njk5Nw@@._V1_FMjpg_UX1000_.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://static.wikia.nocookie.net/disneyfanon/images/6/6b/Ewan_McGregor.jpg/revision/latest?cb=20200409231528');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#logo-2 {
+    height: auto;
+    width: 225px;
+    object-fit: contain;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media(max-width: 768px){
+    header {
+         height: 75px;
+    }
+
+    #logo-1 {
+        margin-top: 100px;
+        width: 250px;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+        color: black;
+        font-weight: bold;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        gap: 50px;
+    }
+
+    .footer-navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}
+

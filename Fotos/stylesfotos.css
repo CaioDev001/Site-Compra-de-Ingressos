@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Lobster&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../Mídia/fundo-de-madeira-velho-grunge-texturizado-escuro_7182-1588.avif');
+    background-size: cover;
+    width: 100%;
+    background-position: 100%;
+    position: absolute;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #593528 solid 5px;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 26px;
+    transition: .5s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+li:hover {
+    transform: scale(1.25);
+}
+
+#logo-1 {
+    width: 225px;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: #593528;
+    padding: 35px;
+    border-bottom: #593528 solid 5px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+    justify-content: center;
+    padding-top: 35px
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.image:hover {
+    transform: scale(1.02);
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#logo-2 {
+    height: auto;
+    width: 225px;
+    object-fit: contain;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    #logo-1 {
+        width: 250px;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .image {
+        width: 550px;
+        height: 550px;
+    }
+
+    .footer-navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}
